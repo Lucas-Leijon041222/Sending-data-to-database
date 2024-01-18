@@ -1,0 +1,128 @@
+/* Lucas Leijon data 3 2024*/
+.city {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 10px solid black;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+  background-color: #333;
+  overflow: auto;
+   color: rgb(0, 0, 0);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border: 2px #333;
+  border-radius: 10px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+  border-radius: 0px 10px 10px 0px; 
+  }
+  
+ 
+
+  .topnav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 10px 10px; 
+    overflow: visible; 
+    z-index: 1;
+  }
+  
+  .topnav .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  }
+  
+  
+  
+  
+  
+  
+  
+  .center {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 87vh; 
+  }
+  
+  .dropdown {
+    display: block;
+    position: relative;
+  }
+  
+  .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 2px solid white; 
+    border-radius: 10px; 
+  }
+  
+
+  
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
